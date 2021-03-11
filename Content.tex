@@ -80,7 +80,7 @@ Fixed $U \stackrel{\text{open}}{\subset} M$, we define $S_p(U)$ to be the \texti
 	,\end{equation} 
 	in which, as stated before, $\sigma^j$ denotes the $j$ th face of $\sigma$.
 
-	Extending the \textit{boundary operator} $\partial$ by linearity, we obtain a \textit{homomorphism}
+	Extending the \textit{boundary operator} $\partial$ by linearity, we obtain a homomorphism
 	\begin{equation}
 		\partial: S_p(U) \to S_{p-1}(U)
 	.\end{equation} 
@@ -200,8 +200,10 @@ Let's now lay the ground for the resolution we will construct:
 		S^p \left(V, K\right) \arrow[r, "{d(V)}"', rightarrow] & S^{p+1} \left(V, K\right)
 	\end{tikzcd}
 	,\end{equation} 
-	where, as defined above, $d(U)$ represents the \textit{coboundary} homomorphism from $S^p \left(U, K\right)$ and $d(V)$ the one from $S^p \left(V, K\right)$.
-	The diagram clearly commutes, since $d$ commutes with restriction (the boundary operator is not affected: the range of $\sigma$ has to be in the restricted domain).
+	where, as defined above, $d(U)$ represents the \textit{coboundary} morphism
+	from $S^p \left(U, K\right)$ and $d(V)$ the one from $S^p \left(V, K\right)$.
+	The diagram clearly commutes, since $d$ commutes with restriction
+	(the boundary operator is not affected: the range of $\sigma$ has to be in the restricted domain).
 \end{rem}
 
 \begin{defn}[Complex of presheaves of singular cochains]\label{def:precocomp}
@@ -342,7 +344,7 @@ With the aim of obtaining a $\Gamma(M;-)$-injective resolution for the constant 
 	If we call $g := h_p (f)$, then we obtain the desired result: the complex is exact.
 \end{rem}
 
-As just stated, for the following thoerems, 
+As just stated, for the following theorems, 
 \begin{equation}
 	U := \mathbb{B} = \left\{ x \in \R^d \ \middle|\ \norm{x} < 1 \right\}
 ,\end{equation} 
@@ -363,7 +365,7 @@ where $d$ is the dimension of $M$, i.e. the generic simply connected open neighb
 
 \begin{rem}
 	With this definition we are only granting \textit{continuity} to $\widetilde{h}_p(\sigma)$, but not \textit{differentiability}.
-	This is one of the few points in which the thoeries for continuous and differentiable simplices diverge.
+	This is one of the few points in which the theories for continuous and differentiable simplices diverge.
 \end{rem}
 
 \begin{lem}\label{lem:boundary_hom}
@@ -620,7 +622,7 @@ Now, before moving onto the main result of this work, let's define a last concep
 \begin{defn}[Integration of forms over singular simplices]
 	Let $M$ be a \textit{differentiable manifold}, $\sigma$ a \textit{differentiable} singular $p$-simplex in $U$ and $\omega$ a \textit{continuous} $p$-form also defined on $U \stackrel{\text{open}}{\subset} M$.
 	\begin{itemize}
-		\item If $p = 0$ $\sigma$ is just the data of a point, $\sigma(0)$, in $U$ and $\omega$ just a continuous (differetniable) function.
+		\item If $p = 0$ $\sigma$ is just the data of a point, $\sigma(0)$, in $U$ and $\omega$ just a continuous (differentiable) function.
 			We define the integral of $\omega$ over $\sigma$ to be
 			\begin{equation}
 				\int_{\sigma}^{} \omega := \omega(\sigma(0)) 
@@ -648,7 +650,7 @@ Let's now state (without proving it) a famous theorem that links the \textit{ext
 	\int_{\partial c}^{} \omega = \int_{c}^{} d\omega
 	.\end{equation} 
 \end{thm}
-If you are interested in the proof you can find it in \cite{warner}, section 4.7.
+If you are interested in the proof you can find it in \cite[\S 4.7]{warner}.
 
 \begin{rem}
 	Let us define, for $p \geq 0$, the following homomorphism
@@ -743,13 +745,13 @@ We are finally ready to state and prove our final result:
 	\begin{equation}
 	\begin{tikzcd}
 		\Omega^\bullet(M) \arrow[d, "k^\bullet"', rightarrow] \arrow[rd, "(k^\bullet)^a", rightarrow] & \\
-		\widetilde{S}^\bullet_\R(M) \arrow[r, "\theta", rightarrow] & S^\bullet_\R(M)
+		\widetilde{S}^\bullet_\R(M) \arrow[r, "\theta"', rightarrow] & S^\bullet_\R(M)
 	\end{tikzcd}
 	,\end{equation} 
 	where $\theta$ is the natural morphism $F \xrightarrow{\theta} F^a$, gives rise to the following commutative diagram of cohomologies
 	\begin{equation}
 	\begin{tikzcd}
-		H^\bullet_{DR}(M) \arrow[d, "k^\bullet", rightarrow] \arrow[rd, "\sim", rightarrow] & \\
+		H^\bullet_{DR}(M) \arrow[d, "k^\bullet"', rightarrow] \arrow[rd, "\sim", rightarrow] & \\
 		H^\bullet_\Delta(M) \arrow[r, "\sim", rightarrow] & H^\bullet(S^\bullet_\R(M))
 	\end{tikzcd}
 	.\end{equation} 
