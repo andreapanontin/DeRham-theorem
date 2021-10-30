@@ -72,35 +72,30 @@
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 
-\newtheoremstyle{algoritmo}
-{1.7em}%〈Space above〉
-{1em}%〈Space below〉
+\newtheoremstyle{example}
+{}%{1.0em}%〈Space above〉
+{}%{0.7em}%〈Space below〉
 {}%〈Body font〉
 {}%〈Indent amount〉
 {\bfseries}%〈Theorem head font〉
-{}%〈Punctuation after theorem head〉
+{.}%〈Punctuation after theorem head〉
 {.5em}%〈Space after theorem head〉
-{\thmname{#1}\thmnumber{ #2}\thmnote{: #3.}}%〈Theorem head spec(can be left empty, meaning ‘normal’)〉
+{}%Theorem head: empty = default
 
-\newtheoremstyle{definizione}
-{1.0em}
-{0.7em}
+\newtheoremstyle{definition}
+{}%{1.0em}
+{}%{0.7em}
 {}
 {}
 {\bfseries}
-{}
-{1.0em}
-{\thmname{#1}\thmnumber{ #2}\thmnote{: #3. \\*}}
+{.\\*}
+{0.5em}
+{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}%〈Theorem head can be left empty, meaning ‘normal’)
 
-
-\theoremstyle{algoritmo}
-\newtheorem*{algo}{Algoritmo}
-\newtheorem*{ex}{Example}
-
-\theoremstyle{definizione}
+\theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}%[section]
-%\theoremstyle{definizione}
-\newtheorem{rem}{Remark}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{ex}[thm]{Example}
 
 \numberwithin{equation}{section}
 
@@ -119,6 +114,7 @@ isbn=false
 ]{biblatex}
 \usepackage{hyperref}
 \addbibresource{Bibliography.bib}
+
 
 \begin{document}
 

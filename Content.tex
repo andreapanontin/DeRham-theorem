@@ -10,7 +10,7 @@
 \section{Useful results}
 Let $M$ be a \textit{paracompact smooth real manifold}.
 \begin{lem}
-	Every \textbf{fine} sheaf on a $M$ is \textbf{soft}.
+	Every \textbf{fine} sheaf on $M$ is \textbf{soft}.
 \end{lem} 
 \begin{lem}\label{lem:gammainjectives}
 	The full subcategory of \textbf{soft sheaves} is $\Gamma(M,-)$-injective.
@@ -36,7 +36,7 @@ Let us define the \textit{continuous singular simplices}:
 
 \begin{rem}
 	The theory can be developed also for \textit{differentiable} singular simplices, but it requires some care we are not willing to give.
-	In general it exactly the same as for \textit{continuous} ones, apart from where elsewhere noted.
+	In general it is exactly the same as for \textit{continuous} ones, apart from where noted otherwise.
 	In case you want to develop such theory, please refer to \cite{warner}.
 
 	From now on we are going to deal only with \textit{continuous} singular simplices, hence we will stop indicating their continuity.
@@ -156,7 +156,7 @@ The set $S^p \left(U, K\right)$ can be made into a $K$-module by defining the fo
 .\end{align} 
 Also note that each singular $p$-cochain can be extended into a \textit{homomorphism} of $S_p(U)$ into $K$ by linearity.
 This actually determines an isomorphism of $S^p \left(U, K\right)$ into the $K$-module of morphisms of $S_p(U)$ into $K$.
-We will, hence, identify elements of $S^p(U,K)$ with the corresponding morphism.
+We will, hence, identify each element of $S^p(U,K)$ with the corresponding morphism.
 
 \begin{defn}[Presheaf of singular $p$-cochains]
 	We can define the functor $\widetilde{S}^p_K: \mathsf{Op}_M^{op} \to \mathsf{Mod}\left( K \right)$ as the functor which acts
@@ -675,8 +675,10 @@ If you are interested in the proof you can find it in \cite[\S 4.7]{warner}.
 	i.e. that $k^{p+1} \circ d = d \circ k^p$.
 	Let $\sigma$ and $\omega$ be as above, then
 	\begin{align}
-		&\phantom{=}(d \circ k^p)(\omega) (\sigma) = k^p(\omega) (\partial\sigma) = \int_{\partial\sigma}^{} \omega\\
-		&= \int_{\sigma}^{} d\omega = k^{p+1}(d\omega) (\sigma) = (k^{p+1} \circ d) (\omega) (\sigma)
+		(d \circ k^p)(\omega) (\sigma) &= k^p(\omega) (\partial\sigma) = 
+		\int_{\partial\sigma}^{} \omega 
+		= \int_{\sigma}^{} d\omega \\
+		&= k^{p+1}(d\omega) (\sigma) = (k^{p+1} \circ d) (\omega) (\sigma)
 	.\end{align} 
 	This, in turn, gives a morphism of the respective cohomologies:
 	\begin{equation}
