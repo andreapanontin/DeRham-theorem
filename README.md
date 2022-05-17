@@ -1,4 +1,4 @@
-# De Rham thoerem
+# De Rham theorem
 In this brief exposition we prove De Rham theorem, which states that
 De Rham and singular cohomology, over a paracompact manifold,
 are isomorphic. Moreover we prove the explicit form of this isomorphism,
