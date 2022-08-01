@@ -1,0 +1,18 @@
+compile_pdf:
+  image: aergus/latex
+  script:
+    - latexmk -pdf DeRham.tex
+  artifacts:
+    paths:
+      - DeRham.pdf
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public  # create a folder called public
+    - mv DeRham.pdf public/De_Rham_and_singular_cohomology.pdf
+  artifacts:
+    paths: 
+      - public  # instruct GitLab to keep the public folder
+  only: 
+    - main  # deploy the pdf only for commits made to the master branch
